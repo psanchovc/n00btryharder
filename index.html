@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+       <!-- Para aceitar os acentos do português --> 
+        <meta 
+        http-equiv="Content-Type" 
+        content="text/html;charset=UTF-8">
+
+        <title> >.n00btryharder project.> </title>
+
+        <link 
+        rel="stylesheet" 
+        href="style.css">
+
+        <link 
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;600;700&display=swap" 
+        rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <div id="container">
+            
+            <section id="intro">
+                
+                <main>
+
+                    <header>
+                        <!-- Alt pode ser usado para explicar a imagem ou caso a imagem não download use a alternativa -->
+                        <img 
+                            src="logo_prince_landing.jpg" 
+                            alt="Imagem do Pequeno Príncipe">
+                    </header>
+
+                    <h1> Quarentena em vigor, a espera do próximo voo para o Brasil, vou aproveitar meu tempo para aprender uma coisa ou outra </h1>
+
+                    <p> <strong> A intenção é documentar projetos pessoais (ex: execução do curso cs50 de Harvard ). </strong> </p>
+
+                    <p class="fat"> Além disso, fazer algo em Finanças, Modelagem e documentar tudo aqui. 
+                                    Compartilhar com amigos e com isso motivar as pessoas a dividir experiências de projetos pessoais.</p> 
+
+                </main>
+
+                <section id="buttons">
+                 
+                    <button onclick="onOff()"> Deixe uma ideia para o próximo projeto </button>
+            
+                    <button class="fat">
+                        <a href="#"></a> Faça parte do >.n00btryharder.> movement   
+                    </button>
+                                        
+                </section>
+            
+                <footer>
+                    Desenvolvido por <a href="https://www.linkedin.com/in/psanchovc/">Sancho</a>
+                </footer>
+
+            </section>
+
+            <section id="last-ideas">
+                
+                <div class="idea">
+                    
+                    <img 
+                        src="cienciacomputacao.svg" 
+                        alt="Imagem Estudando Ciência da Computação">
+                    
+                    <div class="content">
+                        
+                        <h2> Cursando cs50 de Harvard </h2>                                
+                        
+                        <p> Computação </p>
+
+                        <div class="description">
+                            Documentar os projetos, exercícios e anotações do processo de fazer o curso do cs50 de Harvard
+                        </div>
+
+                        <a href="#"> Mais informações </a>
+                        
+                    </div>                
+                </div>
+                
+                <div class="idea">
+                    
+                    <img 
+                    src="Modelagem.svg" 
+                    alt="Imagem Projeto Modelando SARS-Cov-2">
+                    
+                    <div class="content">
+                        
+                        <h3> Modelando o Covid-19 </h3>
+
+                        <p> Modelagem </p>
+
+                        <div class="description">
+                            Usando a linguagem Python, buscaremos usar o ferramental dos modelos SEIR para construir uma modelagem para o coronavírus
+                        </div>
+
+                        <a href="#"> Mais informações </a>
+                        
+                    </div>
+                
+                </div>
+                
+                <div class="idea">
+                    
+                    <img 
+                        src="Financas.svg" 
+                        alt="Imagem Projeto Finanças">
+                    
+                    <div class="content">
+                        
+                        <h4> Fazendo o Valuation Course do Damodaran </h4>
+
+                        <p> Finanças </p>
+
+                        <div class="description">
+                            Vendo as aulas, compartilhando as anotações e modelos feitos
+                        </div>
+
+                        <a href="#"> Mais informações </a>
+                        
+                    </div>                
+                </div>
+                    
+                <div class="idea">
+                    
+                        <img 
+                            src="EconomiaQuantitativa.svg" 
+                            alt="Imagem Projeto Economia Quantitativa">
+                        
+                        <div class="content">
+                            
+                            <h4> Economica Quantitativa com Python </h4>
+    
+                            <p> Modelagem </p>
+                            
+                            <div class="description">
+                                Seguir apostila Sargent de Economia Quantitativa usando Python
+                            </div>
+    
+                            <a href="#"> Mais informações </a>
+                            
+                        </div>
+
+                </div>
+
+            </section>
+
+        </div>
+    
+        <div id="modal" class="hide">
+
+            <div class="content">
+    
+                <h1> Nova Ideia </h1>
+    
+                <form action="">
+    
+                    <div id="input-wrapper">
+                        <label for="title"> Título da Ideia </label>
+                        <input type="text" name="title">    
+                    </div>
+                    
+                    <div id="input-wrapper">
+                        <label for="category"> Categoria </label>
+                        <input type="text" name="category">
+                    </div>
+                    
+                    <div id="input-wrapper">
+                        <label for="image"> Link da Imagem da ideia </label>
+                        <input type="url" name="image">
+                    </div>
+                    
+                    <div id="input-wrapper">   
+                        <label for="description"> Digite uma descrição para essa ideia </label>
+                        <textarea name="description" cols="30" rows="10"></textarea>
+                    </div>
+                    
+                    <div id="input-wrapper">
+                        <label for="link"> Link da ideia </label>
+                        <input type="url" name="link">
+                    </div>
+
+                    <a href="#" onclick="onOff()"> Voltar </a>
+                    
+                    <button> Salvar </button>
+    
+                </form>
+            
+            </div>
+    
+        </div>
+
+        <script 
+        src="scripts.js"></script>
+    
+    </body>
+    
+</html>

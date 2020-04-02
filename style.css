@@ -1,0 +1,275 @@
+
+body{                
+    background: rgb(252, 248, 248);
+    color: #25282b;
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+header{
+    margin-left: 12px;
+}
+
+a {
+    color: lightblue;
+    text-decoration: none;
+    text-align: left;
+    transition: 200ms;
+}
+
+a:hover{
+    color: crimson;
+    text-align: left;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#container{
+    width: 90%;
+    max-width: 900px;
+    margin: 24px auto;
+    background: whitesmoke;
+    display: flex; 
+    border-radius: 18px;
+    border: 1px solid rgb(185, 173, 173);
+}
+
+#intro{
+    width: 450px;
+    height: 600px;
+    margin-right:20px; 
+    background: whitesmoke;
+    border-radius: 18px;
+}
+
+
+main{
+    margin: 16px 16px 8px 8px;
+}
+
+p{
+    text-align: justify;
+}
+
+h1{
+    font-size: 16px;
+    text-align: justify;
+}
+
+button{
+    border: none;
+    background: rgb(185, 173, 173);
+    cursor: pointer;
+    outline: none;
+    border-radius: 6px;
+    width: 140px;
+    height: 70px;
+    margin-right: 6px;
+    box-shadow: 0px 6px 14px rgba(185, 173, 173);
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    transition: 200ms;
+}
+
+button:hover{
+    text-decoration: underline;
+}
+
+button.fat{
+    border: none;
+    background: goldenrod;
+    margin-left: 6px;
+}
+
+#buttons {
+    text-align: center;
+    margin: 16px 16px 16px 32px;
+    display: flex;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    font-weight: regular;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #777
+}
+
+footer a {
+    color: crimson;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: 200ms;
+}   
+
+footer a:hover{
+    color: goldenrod;
+    text-decoration: underline;
+}
+
+.idea{
+    display: flex;
+    margin: 12px 12px 20px 12px;
+    border: 1px solid goldenrod;
+    background-color: rgb(252, 248, 248);
+    border-radius: 4px;
+    padding: 8px;
+    box-shadow: 0 4px 16px -6px rgba(1, 1, 1, 0.15);
+}
+
+.idea img{
+    width:60px;
+    height:60px;
+    margin:28px 28px 16px 16px;
+}
+
+.content{
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+.content h2, h3, h4{
+    margin-top: 12px;
+    margin-bottom: 2px;
+    font-size: 18px;   
+}
+
+.content p{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size:12px;
+    text-align: right;
+    color: #777; 
+}
+
+.description{
+    text-align: justify;
+    margin-bottom: 4px;
+}
+
+p, .description{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+/* modal/pop-up */
+
+#modal {
+    background:goldenrod;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.95;   
+    display: flex;
+    justify-content: center;
+    height: 800px;
+}
+
+#modal .content{
+    margin-top: 48px;   
+    color: cornsilk;   
+}
+
+#modal .content h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+#modal form{
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.content form div:nth-child(3){
+    grid-column: span 2;
+}
+
+.content form div:nth-child(4){
+    grid-column: span 2;
+}
+
+.content form div:nth-child(5){
+    grid-column: span 2;
+}
+
+.input-wrapper{
+    margin: 16px;
+}
+
+form input, textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #777700;
+    font-size: 16px;
+    outline: none;
+    color: #777;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    box-sizing: border-box;
+}
+
+form label{
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.8px;
+}
+
+form a{
+    background-color: rgb(224, 194, 116);
+    color: crimson;
+    opacity: 0.8;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self:end;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 400ms;
+}
+
+form a:hover{
+    background-color: lightblue;
+    opacity: 0.85;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+form button {
+    background: white;
+    color: crimson;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    grid-column: 2;
+    justify-self: end;
+    font-weight: 700;
+}
+
+form button:hover{
+    background-color: crimson;
+    opacity: 0.95;
+    color: goldenrod;
+    text-decoration: none;
+    transition: 400ms;
+}
+
+#modal.hide{
+    opacity: 0;
+    visibility: hidden;
+}
